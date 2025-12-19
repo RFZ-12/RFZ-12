@@ -1,80 +1,100 @@
-<h1 align="center">👋 Bienvenido a mi perfil de github</h1>
+<h1 align="center">👋 Hola, soy Rodrigo</h1>
+<p align="center">
+  Desarrollador Full-Stack enfocado en construir aplicaciones web modernas, APIs robustas y automatización CI/CD.
+</p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=oliverio12&label=Visitas%20al%20perfil&color=0e75b6&style=flat" alt="Perfil visitas" />
+  <img src="https://komarev.com/ghpvc/?username=oliverio12&label=Visitas%20al%20perfil&color=0e75b6&style=flat" alt="Visitas al perfil" />
   &nbsp;&nbsp;
-  <img src="https://github-profile-trophy.vercel.app/?username=oliverio12&theme=gruvbox&no-frame=true&margin-w=15&margin-h=15" alt="Trophies" />
+  <img src="https://img.shields.io/github/followers/oliverio12?label=Seguidores&style=flat&color=0e75b6" alt="Seguidores" />
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/github/stars/oliverio12?label=Estrellas&style=flat&color=0e75b6" alt="Estrellas" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=oliverio12&theme=gruvbox&no-frame=true&margin-w=15&margin-h=15" alt="GitHub Trophies" />
 </p>
 
 ---
 
 ## 🚀 Sobre mí
-Desarrollador Web con experiencia en **React**, **Node.js (Express)**, **Python** y **Java**. 
+- Desarrollo aplicaciones con **React**, **Node.js (Express)**, **Python (Django/Flask)** y **Java**.
+- Interesado en **arquitecturas limpias**, **APIs REST**, **bases de datos** y **CI/CD con Jenkins**.
+- Me gusta crear soluciones mantenibles, con buen rendimiento y buena experiencia de usuario.
+
 ---
 
-## 🛠️ Tecnologías y Herramientas
+## 🧰 Stack Tecnológico
 
-<table>
-  <tr>
-    <th align="left">Frontend</th>
-    <td>
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="30" height="30"/> 
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="30" height="30"/>
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5" width="30" height="30"/>
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3" width="30" height="30"/>
-      <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS" width="30" height="30"/>
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="Bootstrap" width="30" height="30"/>
-    </td>
-  </tr>
-  <tr>
-    <th align="left">Backend</th>
-    <td>
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" width="30" height="30"/>
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="Express" width="30" height="30"/>
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="30" height="30"/>
-      <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="Flask" width="30" height="30"/>
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" width="30" height="30"/>
-    </td>
-  </tr>
-  <tr>
-    <th align="left">Móvil & UI/UX</th>
-    <td>
-      <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="Flutter" width="30" height="30"/>
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="Android" width="30" height="30"/>
-      <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma" width="30" height="30"/>
-      <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="Illustrator" width="30" height="30"/>
-    </td>
-  </tr>
-  <tr>
-    <th align="left">DevOps & BD</th>
-    <td>
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="Docker" width="30" height="30"/>
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-scm-icon.svg" alt="Git" width="30" height="30"/>
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" width="30" height="30"/>
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL" width="30" height="30"/>
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="30" height="30"/>
-      <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase" width="30" height="30"/>
-    </td>
-  </tr>
-</table>
+### Frontend
+<p>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" />
+</p>
+
+### Backend
+<p>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+</p>
+
+### Móvil & UI/UX
+<p>
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
+  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
+  <img src="https://img.shields.io/badge/Illustrator-FF9A00?style=for-the-badge&logo=adobeillustrator&logoColor=white" alt="Illustrator" />
+</p>
+
+### DevOps & Bases de Datos
+<p>
+  <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
+</p>
+
+---
+
+## 🔁 CI/CD (Jenkins)
+- Pipelines para **build**, **tests**, **linting** y **deploy**.
+- Integración con **Docker** para entornos reproducibles.
+- Enfoque en entregas más rápidas y confiables (automatización y calidad).
+
+---
+
+## 📌 Proyectos Destacados
+> Puedes fijar 2–4 repos aquí y agregar una línea por proyecto.
+
+- **Proyecto 1** – breve descripción (stack + objetivo)  
+- **Proyecto 2** – breve descripción (stack + objetivo)
 
 ---
 
 ## 📫 Contacto
-
-- ✉️ [rodrigozavaleta12@gmail.com](mailto:rodrigozavaleta12@gmail.com)  
-- 🔗 [LinkedIn](https://www.linkedin.com/in/rodrigo-fernandez-761922270/)  
+- ✉️ **Email:** [rodrigozavaleta12@gmail.com](mailto:rodrigozavaleta12@gmail.com)  
+- 🔗 **LinkedIn:** https://www.linkedin.com/in/rodrigo-fernandez-761922270/
 
 ---
 
-## 📊 Mis estadísticas
-
+## 📊 Estadísticas
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=oliverio12&show_icons=true&theme=radical" alt="Estadísticas de GitHub" />
   &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=oliverio12&layout=compact&theme=radical" alt="Principales lenguajes" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=oliverio12&layout=compact&theme=radical" alt="Lenguajes más usados" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=oliverio12&theme=radical" alt="Streak de GitHub" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=oliverio12&theme=radical" alt="Racha de contribuciones" />
 </p>
