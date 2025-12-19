@@ -74,27 +74,6 @@
 
 ---
 
-## 📌 Proyectos Destacados
-> Puedes fijar 2–4 repos aquí y agregar una línea por proyecto.
-
-- **Proyecto 1** – breve descripción (stack + objetivo)  
-- **Proyecto 2** – breve descripción (stack + objetivo)
-
----
-
 ## 📫 Contacto
 - ✉️ **Email:** [rodrigozavaleta12@gmail.com](mailto:rodrigozavaleta12@gmail.com)  
 - 🔗 **LinkedIn:** https://www.linkedin.com/in/rodrigo-fernandez-761922270/
-
----
-
-## 📊 Estadísticas
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=oliverio12&show_icons=true&theme=radical" alt="Estadísticas de GitHub" />
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=oliverio12&layout=compact&theme=radical" alt="Lenguajes más usados" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=oliverio12&theme=radical" alt="Racha de contribuciones" />
-</p>
