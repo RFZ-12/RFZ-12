@@ -1,79 +1,200 @@
-<h1 align="center">👋 Hola, soy Rodrigo</h1>
-<p align="center">
-  Desarrollador Full-Stack enfocado en construir aplicaciones web modernas, APIs robustas y automatización CI/CD.
-</p>
+<!-- ═══════════════════════════ BANNER ═══════════════════════════ -->
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0E75B6,100:1F6FEB&height=190&section=header&text=Rodrigo%20Fern%C3%A1ndez&fontSize=44&fontColor=FFFFFF&fontAlignY=34&animation=fadeIn&desc=Full-Stack%20Developer&descAlignY=54&descSize=18" alt="banner" />
+</div>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=oliverio12&label=Visitas%20al%20perfil&color=0e75b6&style=flat" alt="Visitas al perfil" />
-  &nbsp;&nbsp;
-  <img src="https://img.shields.io/github/followers/oliverio12?label=Seguidores&style=flat&color=0e75b6" alt="Seguidores" />
-  &nbsp;&nbsp;
-  <img src="https://img.shields.io/github/stars/oliverio12?label=Estrellas&style=flat&color=0e75b6" alt="Estrellas" />
-</p>
+<!-- ═══════════════════════════ TYPING ═══════════════════════════ -->
+<div align="center">
+  <a href="https://www.linkedin.com/in/rodrigo-fernandez-761922270/">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=0E75B6&center=true&vCenter=true&width=620&lines=Aplicaciones+web+modernas;APIs+REST+robustas+y+escalables;Arquitecturas+limpias+y+c%C3%B3digo+mantenible;Automatizaci%C3%B3n+CI%2FCD+con+Jenkins+%2B+Docker" alt="Typing SVG" />
+  </a>
+</div>
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=oliverio12&theme=gruvbox&no-frame=true&margin-w=15&margin-h=15" alt="GitHub Trophies" />
-</p>
+<!-- ═══════════════════════════ BADGES ═══════════════════════════ -->
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=oliverio12&label=Visitas%20al%20perfil&color=0E75B6&style=for-the-badge" alt="Visitas al perfil" />
+  <img src="https://img.shields.io/github/followers/oliverio12?label=Seguidores&style=for-the-badge&color=0E75B6&labelColor=1C1E26" alt="Seguidores" />
+  <img src="https://img.shields.io/github/stars/oliverio12?label=Estrellas&style=for-the-badge&color=0E75B6&labelColor=1C1E26" alt="Estrellas" />
+</div>
 
----
+<br />
 
+<!-- ═══════════════════════════ SOBRE MÍ ═══════════════════════════ -->
 ## 🚀 Sobre mí
-- Desarrollo aplicaciones con **React**, **Node.js (Express)**, **Python (Django/Flask)** y **Java**.
-- Interesado en **arquitecturas limpias**, **APIs REST**, **bases de datos** y **CI/CD con Jenkins**.
-- Me gusta crear soluciones mantenibles, con buen rendimiento y buena experiencia de usuario.
 
----
+```yaml
+nombre:     Rodrigo Fernández
+rol:        Full-Stack Developer
+enfoque:    [ Aplicaciones web, APIs REST, CI/CD ]
+stack:      [ React, Node.js, Python, Java ]
+principios: [ Clean Architecture, Código mantenible, Buen rendimiento ]
+aprendiendo: [ Cloud, Testing automatizado, Observabilidad ]
+```
 
+- 🧩 Construyo productos de punta a punta: del diseño de la API hasta la interfaz final.
+- 🏗️ Me interesan las **arquitecturas limpias**, el **modelado de datos** y las **APIs bien documentadas**.
+- ⚙️ Automatizo builds, tests y despliegues con **Jenkins** y **Docker**.
+- 🎯 Objetivo: soluciones simples, rápidas y fáciles de mantener por otros.
+
+<br />
+
+<!-- ═══════════════════════════ STACK ═══════════════════════════ -->
 ## 🧰 Stack Tecnológico
 
-### Frontend
+<table>
+  <tr>
+    <td valign="top" width="50%">
+
+**🎨 Frontend**
+
 <p>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" />
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+<img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" />
 </p>
 
-### Backend
+  </td>
+    <td valign="top" width="50%">
+
+**⚙️ Backend**
+
 <p>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django" />
-  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
+<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
 </p>
 
-### Móvil & UI/UX
+  </td>
+  </tr>
+  <tr>
+    <td valign="top" width="50%">
+
+**📱 Móvil & UI/UX**
+
 <p>
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
-  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
-  <img src="https://img.shields.io/badge/Illustrator-FF9A00?style=for-the-badge&logo=adobeillustrator&logoColor=white" alt="Illustrator" />
+<img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
+<img src="https://img.shields.io/badge/Illustrator-FF9A00?style=for-the-badge&logo=adobeillustrator&logoColor=white" />
 </p>
 
-### DevOps & Bases de Datos
+  </td>
+    <td valign="top" width="50%">
+
+**🐳 DevOps & Datos**
+
 <p>
-  <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
+<img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+<img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
 </p>
 
----
+  </td>
+  </tr>
+</table>
 
-## 🔁 CI/CD (Jenkins)
-- Pipelines para **build**, **tests**, **linting** y **deploy**.
-- Integración con **Docker** para entornos reproducibles.
-- Enfoque en entregas más rápidas y confiables (automatización y calidad).
+<br />
 
----
+<!-- ═══════════════════════════ PROYECTOS ═══════════════════════════ -->
+## 📌 Proyectos Destacados
 
+<!-- 👉 Reemplaza los nombres de repo por los tuyos. Si un repo no existe, la tarjeta no se mostrará. -->
+<div align="center">
+  <a href="https://github.com/oliverio12/NOMBRE-REPO-1">
+    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=oliverio12&repo=NOMBRE-REPO-1&theme=tokyonight&hide_border=true&bg_color=0D1117" />
+  </a>
+  <a href="https://github.com/oliverio12/NOMBRE-REPO-2">
+    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=oliverio12&repo=NOMBRE-REPO-2&theme=tokyonight&hide_border=true&bg_color=0D1117" />
+  </a>
+</div>
+
+| Proyecto | Descripción | Stack |
+|---|---|---|
+| **Proyecto 1** | Breve descripción del problema que resuelve y su resultado. | `React` `Node.js` `PostgreSQL` |
+| **Proyecto 2** | Breve descripción del problema que resuelve y su resultado. | `Django` `Docker` `Jenkins` |
+| **Proyecto 3** | Breve descripción del problema que resuelve y su resultado. | `Flutter` `Firebase` |
+
+<br />
+
+<!-- ═══════════════════════════ CI/CD ═══════════════════════════ -->
+## 🔁 CI/CD con Jenkins
+
+```mermaid
+flowchart LR
+    A[Commit / PR] --> B[Build]
+    B --> C[Tests]
+    C --> D[Lint & Quality]
+    D --> E[Docker Image]
+    E --> F[Deploy]
+```
+
+- 🧪 Pipelines para **build**, **tests**, **linting** y **deploy** automatizados.
+- 🐳 Integración con **Docker** para entornos reproducibles en cualquier máquina.
+- 🚀 Enfoque en entregas más rápidas, confiables y con menos intervención manual.
+
+<br />
+
+<!-- ═══════════════════════════ ESTADÍSTICAS ═══════════════════════════ -->
+## 📊 Estadísticas de GitHub
+
+<div align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=oliverio12&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0E75B6&icon_color=0E75B6" alt="Estadísticas" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=oliverio12&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0E75B6" alt="Lenguajes más usados" />
+</div>
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=oliverio12&theme=tokyonight&hide_border=true&background=0D1117&ring=0E75B6&fire=0E75B6&currStreakLabel=0E75B6" alt="Racha de contribuciones" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=oliverio12&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=0E75B6&line=0E75B6&point=FFFFFF&area=true" alt="Gráfico de actividad" />
+</div>
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=oliverio12&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="Trofeos" />
+</div>
+
+<br />
+
+<!-- ═══════════════════════════ CONTACTO ═══════════════════════════ -->
 ## 📫 Contacto
-- ✉️ **Email:** [rodrigozavaleta12@gmail.com](mailto:rodrigozavaleta12@gmail.com)  
-- 🔗 **LinkedIn:** https://www.linkedin.com/in/rodrigo-fernandez-761922270/
+
+<div align="center">
+  <a href="mailto:rodrigozavaleta12@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://www.linkedin.com/in/rodrigo-fernandez-761922270/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://github.com/oliverio12">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+</div>
+
+<br />
+
+<div align="center">
+  <i>💬 Abierto a colaboraciones, proyectos freelance y nuevas oportunidades.</i>
+</div>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1F6FEB,100:0E75B6&height=120&section=footer" alt="footer" />
+
+<!--
+💡 EXTRA OPCIONAL — Animación de la serpiente comiendo tus contribuciones:
+1. Crea el archivo .github/workflows/snake.yml con la acción "Platane/snk".
+2. Luego agrega aquí:
+<div align="center">
+  <img src="https://raw.githubusercontent.com/oliverio12/oliverio12/output/snake.svg" alt="snake" />
+</div>
+-->
