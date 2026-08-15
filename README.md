@@ -12,9 +12,9 @@
 
 <!-- ═══════════════════════════ BADGES ═══════════════════════════ -->
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=oliverio12&label=Visitas%20al%20perfil&color=0E75B6&style=for-the-badge" alt="Visitas al perfil" />
-  <img src="https://img.shields.io/github/followers/oliverio12?label=Seguidores&style=for-the-badge&color=0E75B6&labelColor=1C1E26" alt="Seguidores" />
-  <img src="https://img.shields.io/github/stars/oliverio12?label=Estrellas&style=for-the-badge&color=0E75B6&labelColor=1C1E26" alt="Estrellas" />
+  <img src="https://komarev.com/ghpvc/?username=RFZ-12&label=Visitas%20al%20perfil&color=0E75B6&style=for-the-badge" alt="Visitas al perfil" />
+  <img src="https://img.shields.io/github/followers/RFZ-12?label=Seguidores&style=for-the-badge&color=0E75B6&labelColor=1C1E26" alt="Seguidores" />
+  <img src="https://img.shields.io/github/stars/RFZ-12?label=Estrellas&style=for-the-badge&color=0E75B6&labelColor=1C1E26" alt="Estrellas" />
 </div>
 
 <br />
@@ -110,11 +110,11 @@ aprendiendo: [ Cloud, Testing automatizado, Observabilidad ]
 
 <!-- 👉 Reemplaza los nombres de repo por los tuyos. Si un repo no existe, la tarjeta no se mostrará. -->
 <div align="center">
-  <a href="https://github.com/oliverio12/NOMBRE-REPO-1">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=oliverio12&repo=NOMBRE-REPO-1&theme=tokyonight&hide_border=true&bg_color=0D1117" />
+  <a href="https://github.com/RFZ-12/NOMBRE-REPO-1">
+    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=RFZ-12&repo=NOMBRE-REPO-1&theme=tokyonight&hide_border=true&bg_color=0D1117" />
   </a>
-  <a href="https://github.com/oliverio12/NOMBRE-REPO-2">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=oliverio12&repo=NOMBRE-REPO-2&theme=tokyonight&hide_border=true&bg_color=0D1117" />
+  <a href="https://github.com/RFZ-12/NOMBRE-REPO-2">
+    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=RFZ-12&repo=NOMBRE-REPO-2&theme=tokyonight&hide_border=true&bg_color=0D1117" />
   </a>
 </div>
 
@@ -127,20 +127,126 @@ aprendiendo: [ Cloud, Testing automatizado, Observabilidad ]
 <br />
 
 <!-- ═══════════════════════════ CI/CD ═══════════════════════════ -->
-## 🔁 CI/CD con Jenkins
+## 🔁 CI/CD — Jenkins + Docker
+
+> Del *commit* a producción sin intervención manual: build reproducible, calidad verificada, imagen versionada y despliegue con *rollback* disponible.
 
 ```mermaid
 flowchart LR
-    A[Commit / PR] --> B[Build]
-    B --> C[Tests]
-    C --> D[Lint & Quality]
-    D --> E[Docker Image]
-    E --> F[Deploy]
+    subgraph SRC["🧑‍💻 Origen"]
+        A["Commit / Pull Request"] --> B["Webhook a Jenkins"]
+    end
+
+    subgraph CI["⚙️ Integración Continua"]
+        B --> C["Checkout + Cache de dependencias"]
+        C --> D["Lint / Formato"]
+        C --> E["Tests unitarios + Cobertura"]
+        C --> F["Análisis estático - SonarQube"]
+        D --> G{"¿Quality Gate?"}
+        E --> G
+        F --> G
+    end
+
+    G -- "❌ Falla" --> X["Build marcado como fallido<br/>Notificación al equipo"]
+
+    subgraph BUILD["🐳 Empaquetado con Docker"]
+        G -- "✅ Pasa" --> H["Docker build - multi-stage"]
+        H --> I["Escaneo de vulnerabilidades - Trivy"]
+        I --> J["Tag semántico: v1.4.2 + SHA"]
+        J --> K["Push al Container Registry"]
+    end
+
+    subgraph CD["🚀 Entrega Continua"]
+        K --> L["Deploy a Staging<br/>docker compose up -d"]
+        L --> M["Smoke tests + Health checks"]
+        M --> N{"¿Aprobación manual?"}
+        N -- "Sí" --> O["Deploy a Producción<br/>Blue-Green / Rolling"]
+        O --> P["Health check post-deploy"]
+        P -- "❌" --> Q["Rollback automático<br/>a la imagen anterior"]
+        P -- "✅" --> R["Release estable<br/>Monitoreo + Logs"]
+    end
 ```
 
-- 🧪 Pipelines para **build**, **tests**, **linting** y **deploy** automatizados.
-- 🐳 Integración con **Docker** para entornos reproducibles en cualquier máquina.
-- 🚀 Enfoque en entregas más rápidas, confiables y con menos intervención manual.
+### 🐳 Cómo trabajo con Docker
+
+| Práctica | Qué aporta |
+|---|---|
+| **Builds multi-stage** | Imágenes finales ligeras: se compila en una etapa y solo se copia el artefacto final. |
+| **Imágenes base slim/alpine + usuario no-root** | Menor superficie de ataque y arranque más rápido. |
+| **Tags inmutables** (`v1.4.2`, `sha-a1b2c3d`) | Cada despliegue es rastreable y reversible; nada de `latest` en producción. |
+| **Escaneo de imágenes en el pipeline** | Las vulnerabilidades críticas frenan el build antes de llegar al registry. |
+| **`docker compose` por entorno** | Dev, staging y producción parten del mismo artefacto, solo cambian variables. |
+| **Health checks + rollback** | Si el contenedor nuevo no responde sano, se restaura la versión anterior automáticamente. |
+| **Cache de capas y de dependencias** | Pipelines más cortos y builds predecibles. |
+
+<details>
+<summary><b>📄 Ver ejemplo de Jenkinsfile</b></summary>
+
+```groovy
+pipeline {
+  agent any
+
+  environment {
+    REGISTRY  = 'registry.midominio.com'
+    IMAGE     = "${REGISTRY}/app"
+    TAG       = "${env.BUILD_NUMBER}-${env.GIT_COMMIT.take(7)}"
+  }
+
+  options {
+    timestamps()
+    buildDiscarder(logRotator(numToKeepStr: '20'))
+  }
+
+  stages {
+    stage('Checkout')  { steps { checkout scm } }
+
+    stage('Calidad') {
+      parallel {
+        stage('Lint')  { steps { sh 'npm run lint' } }
+        stage('Tests') { steps { sh 'npm test -- --coverage' } }
+      }
+      post { always { junit 'reports/**/*.xml' } }
+    }
+
+    stage('Build imagen') {
+      steps { sh "docker build -t ${IMAGE}:${TAG} -t ${IMAGE}:stable ." }
+    }
+
+    stage('Escaneo de seguridad') {
+      steps { sh "trivy image --exit-code 1 --severity HIGH,CRITICAL ${IMAGE}:${TAG}" }
+    }
+
+    stage('Push al registry') {
+      steps {
+        withCredentials([usernamePassword(credentialsId: 'registry-creds',
+                                          usernameVariable: 'U', passwordVariable: 'P')]) {
+          sh 'echo $P | docker login $REGISTRY -u $U --password-stdin'
+          sh "docker push ${IMAGE}:${TAG}"
+        }
+      }
+    }
+
+    stage('Deploy a Staging') {
+      steps { sh "IMAGE_TAG=${TAG} docker compose -f compose.staging.yml up -d --remove-orphans" }
+    }
+
+    stage('Aprobación') {
+      steps { input message: '¿Desplegar a producción?', ok: 'Desplegar' }
+    }
+
+    stage('Deploy a Producción') {
+      steps { sh "IMAGE_TAG=${TAG} ./scripts/deploy-prod.sh" }
+    }
+  }
+
+  post {
+    failure { echo '❌ Pipeline fallido — ejecutando rollback'; sh './scripts/rollback.sh' }
+    success { echo "✅ Desplegado correctamente: ${IMAGE}:${TAG}" }
+  }
+}
+```
+
+</details>
 
 <br />
 
@@ -148,20 +254,20 @@ flowchart LR
 ## 📊 Estadísticas de GitHub
 
 <div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=oliverio12&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0E75B6&icon_color=0E75B6" alt="Estadísticas" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=oliverio12&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0E75B6" alt="Lenguajes más usados" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=RFZ-12&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0E75B6&icon_color=0E75B6" alt="Estadísticas" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RFZ-12&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0E75B6" alt="Lenguajes más usados" />
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=oliverio12&theme=tokyonight&hide_border=true&background=0D1117&ring=0E75B6&fire=0E75B6&currStreakLabel=0E75B6" alt="Racha de contribuciones" />
+  <img src="https://streak-stats.demolab.com?user=RFZ-12&theme=tokyonight&hide_border=true&background=0D1117&ring=0E75B6&fire=0E75B6&currStreakLabel=0E75B6" alt="Racha de contribuciones" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=oliverio12&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=0E75B6&line=0E75B6&point=FFFFFF&area=true" alt="Gráfico de actividad" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RFZ-12&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=0E75B6&line=0E75B6&point=FFFFFF&area=true" alt="Gráfico de actividad" />
 </div>
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=oliverio12&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="Trofeos" />
+  <img src="https://github-profile-trophy.vercel.app/?username=RFZ-12&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="Trofeos" />
 </div>
 
 <br />
@@ -176,7 +282,7 @@ flowchart LR
   <a href="https://www.linkedin.com/in/rodrigo-fernandez-761922270/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://github.com/oliverio12">
+  <a href="https://github.com/RFZ-12">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
 </div>
@@ -195,6 +301,6 @@ flowchart LR
 1. Crea el archivo .github/workflows/snake.yml con la acción "Platane/snk".
 2. Luego agrega aquí:
 <div align="center">
-  <img src="https://raw.githubusercontent.com/oliverio12/oliverio12/output/snake.svg" alt="snake" />
+  <img src="https://raw.githubusercontent.com/RFZ-12/RFZ-12/output/snake.svg" alt="snake" />
 </div>
 -->
